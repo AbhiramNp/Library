@@ -9,6 +9,39 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="form-heading">
+            <h1>Add New Book To Library</h1>
+        </div>
+    <div class="books-heading">
+        <h1>Current Books In Library</h1>
+    </div>
+    <div class="form">
+        <p>Test Form Info</p>
+    </div>
+    <button type="button" class="btn">Add Books</button>
+    <button type="button" id="btnForm" onclick="addForm()">Add Books Form</button>
+
+    <form action="#" id="bookForm">
+        <label for="movieName">Enter the books name</label>
+        <input type="text" id="bookName" name="bookName" placeholder="Enter books name">
     
+        <label for="authorName">Enter the author name</label>
+        <input type="text" id="authorName" name="authorName" placeholder="Enter authors name">
+    
+        <label for="pageNumber">Enter the number of pages</label>
+        <input type="text" id="pageNumber" name="pageNumber" placeholder="Enter books name">
+    
+        <label for="status">Read or not?</label>
+        <input type="text" id="status" name="status" placeholder="Enter the current stats">
+
+        <button type="submit" class="formSubmit">Submit Book</button>
+    
+         </form>
+
+    </div>
+    
+
+
 </body>
 </html>
