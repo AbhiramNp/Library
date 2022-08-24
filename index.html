@@ -10,34 +10,50 @@
 </head>
 <body>
     <div class="container">
+    <div class="header-container">
         <div class="form-heading">
-            <h1>Add New Book To Library</h1>
+            <h1>WELCOME TO LIBRARY</h1>
         </div>
-    <div class="books-heading">
-        <h1>Current Books In Library</h1>
-    </div>
     <div class="form">
-        <p>Test Form Info</p>
+        <p>Click the button below to add books</p>
     </div>
-    <button type="button" class="btn">Add Books</button>
     <button type="button" id="btnForm" onclick="addForm()">Add Books Form</button>
+    </div>
+    <div class="form-container">
 
     <form action="#" id="bookForm">
-        <label for="movieName">Enter the books name</label>
+        <div class="form-elements">
+        <label for="movieName">Enter the books name 📚 </label>
         <input type="text" id="bookName" name="bookName" placeholder="Enter books name">
     
-        <label for="authorName">Enter the author name</label>
+        <label for="authorName">Enter the author name ✍️</label>
         <input type="text" id="authorName" name="authorName" placeholder="Enter authors name">
     
-        <label for="pageNumber">Enter the number of pages</label>
+        <label for="pageNumber">Enter the number of pages 📖</label>
         <input type="text" id="pageNumber" name="pageNumber" placeholder="Enter books name">
     
-        <label for="status">Read or not?</label>
-        <input type="text" id="status" name="status" placeholder="Enter the current stats">
+        <label>Status</label>
+        <div class="radiobtn">
+        <label for="statusRead">✅ Read</label>
+        <input type="radio" id="statusRead" name="radioStatus" value="Read" class="radio">
 
-        <button type="submit" class="formSubmit">Submit Book</button>
+        <label for="statusnotRead">❌ Haven't Read</label>
+        <input type="radio" id="statusnotRead" name="radioStatus" value="Haven't Read" class="radio">
+        </div>
+        </div>
+
+    </form>
+    </div>
+    <div class="submitBtn">
+        <button type="button" class="formSubmit">Submit Book</button>
+    </div>    
+    <h1 id="current-book">CURRENT BOOKS</h1>
+        <div class="books">
+ 
+
+        </div>
     
-         </form>
+
 
     </div>
     
